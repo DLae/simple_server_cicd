@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minesweeper gone wrong</title>
+  </head>
+  <body>
+    <h1>Scuffedsweeper</h1>
+    {% for i in range(500)%}
+        {% if i == rNumber %}
+            <form id="danger", action="https://open.spotify.com/">
+                <input type='submit' value='Click'>
+            </form>
+        {% endif %}
+        <form id='clear'>Click</form>
+    {% endfor %}
+    <!-- ... -->
+  </body>
+</html>

@@ -1,11 +1,12 @@
 import os
-from flask import Flask, request
+from flask import Flask, request, render_template
+from random import *
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def get_home():
-    return "I am a CI-CD hero!"
+    return render_template('index.html', rNumber=randint(1,99))
 
 if __name__ == '__main__':
     app.run(
